@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:padding="16dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/shopping_list"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtitem1"
+                style="@style/displayItems"
+                android:visibility="invisible"
+                tools:text="Cheese" />
+
+            <TextView
+                android:id="@+id/txtitem2"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem3"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem4"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem5"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem6"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem7"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem8"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem9"
+                style="@style/displayItems" />
+
+            <TextView
+                android:id="@+id/txtitem10"
+                style="@style/displayItems" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addButton1"
+            android:text="@string/add1" />
+
+        <Button
+            android:id="@+id/addbtn2"
+            android:onClick="addButton2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add2" />
+
+        <Button
+            android:id="@+id/addbtn3"
+            android:onClick="addButton3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add3" />
+
+        <Button
+            android:id="@+id/addbtn4"
+            android:onClick="addButton4"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add4" />
+
+        <Button
+            android:id="@+id/addbtn5"
+            android:onClick="addButton5"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add5" />
+
+        <Button
+            android:id="@+id/addbtn6"
+            android:onClick="addButton6"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add6" />
+
+        <Button
+            android:id="@+id/addbtn7"
+            android:onClick="addButton7"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add7" />
+
+        <Button
+            android:id="@+id/addbtn8"
+            android:onClick="addButton8"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add8" />
+
+        <Button
+            android:id="@+id/addbtn9"
+            android:onClick="addButton9"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add9" />
+
+        <Button
+            android:id="@+id/addbtn10"
+            android:onClick="addButton10"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add10" />
+
+        <TextView
+            android:id="@+id/textViewFull"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_slab"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_list_full" />
+    </LinearLayout>
+
+</LinearLayout>

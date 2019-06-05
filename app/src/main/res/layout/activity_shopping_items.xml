@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShoppingItems">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/itembtn1"
+        style="@style/itemStyle"
+        android:onClick="returnItem1"
+        android:text="@string/cheese"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itembtn2"
+        app:layout_constraintEnd_toStartOf="@+id/itembtn2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/itembtn2"
+        style="@style/itemStyle"
+        android:layout_marginTop="30dp"
+        android:onClick="returnItem2"
+        android:text="@string/rice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itembtn1"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/itembtn3"
+        style="@style/itemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="returnItem3"
+        android:text="@string/apples"
+        app:layout_constraintEnd_toStartOf="@+id/itembtn4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itembtn1" />
+
+    <Button
+        android:id="@+id/itembtn4"
+        android:onClick="returnItem4"
+        style="@style/itemStyle"
+        android:text="@string/snacks"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itembtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itembtn3" />
+
+    <Button
+        android:id="@+id/itembtn5"
+        style="@style/itemStyle"
+        android:layout_marginTop="30dp"
+        android:onClick="returnItem5"
+        android:text="@string/Coca_cola"
+        app:layout_constraintEnd_toStartOf="@+id/itembtn6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itembtn3" />
+
+    <Button
+        android:id="@+id/itembtn6"
+        style="@style/itemStyle"
+        android:onClick="returnItem6"
+        android:text="@string/eggs"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itembtn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itembtn5" />
+
+    <Button
+        android:id="@+id/itembtn7"
+        style="@style/itemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="returnItem7"
+        android:text="@string/seafood"
+        app:layout_constraintEnd_toStartOf="@+id/itembtn8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itembtn5" />
+
+    <Button
+        android:id="@+id/itembtn8"
+        android:onClick="returnItem8"
+        style="@style/itemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bread"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itembtn7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itembtn7" />
+
+    <Button
+        android:id="@+id/itembtn9"
+        android:onClick="returnItem9"
+        style="@style/itemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pasta"
+        app:layout_constraintBaseline_toBaselineOf="@+id/itembtn10"
+        app:layout_constraintEnd_toStartOf="@+id/itembtn10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/itembtn10"
+        style="@style/itemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="returnItem10"
+        android:text="@string/meat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itembtn9"
+        app:layout_constraintTop_toBottomOf="@+id/itembtn8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
